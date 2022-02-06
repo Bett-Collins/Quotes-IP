@@ -8,7 +8,7 @@
          <button (click)='toggleDetails(i)'>Toggle Details</button>
          <!-- <app-goal-detail *ngIf='goal.showDescription' [quote]='quote' '></app-goal-detail> -->
         <li *ngFor='let quote of quotes;let i = index'>
-           {{quote.name}} 
+           {{quote.name}} due on {{quote.completeDate|date}}
            <button (click)='toggleDetails(i)'>Toggle Details</button>
            <app-qoute-details *ngIf = 'quote.showDescription' [quote]='quote'(isComplete) = 'completeQuote($event,i)'></app-qoute-details>
    

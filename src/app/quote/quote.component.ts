@@ -12,11 +12,12 @@ ngOnInit(): void {
 }
 
 quotes:Quote[] =[
-  new Quote (1,'Collins','Martin-luther', 'life qoutes -life is hard'),
-  new Quote (1,'Collins','Martin-luther', 'life qoutes-life is hard'),
-  new Quote (1,'Collins','Martin-luther', 'life qoutes-life is hard'),
-  new Quote (1,'Collins','Martin-luther', 'life qoutes-life is hard'),
-  new Quote (1,'Collins','Martin-luther', 'life qoutes-life is hard'),
+  new Quote (1,'Collins','Martin-luther', 'life qoutes -life is hard',new Date(2016,3,16)),
+  new Quote (1,'Collins','Martin-luther', 'life qoutes -life is hard',new Date(2017,10,4)),
+  new Quote (1,'Collins','Martin-luther', 'life qoutes-life is hard',new Date(2018,6,12)),
+  new Quote (1,'Collins','Martin-luther', 'life qoutes-life is hard',new Date(2019,11,2)),
+  new Quote (1,'Collins','Martin-luther', 'life qoutes-life is hard',new Date(2022,9,28)),
+ 
 
 
 
