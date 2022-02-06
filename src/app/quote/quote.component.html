@@ -1,15 +1,22 @@
+<div class="container">
+  <h1>My favorite quotes</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <ul>
+        <div *ngFor='let quote of quotes;let i = index'>
+          <li>{{quote.name}}</li>
+          <button (click)='toggleDetails(i)'>Toggle Details</button>
+          <li *ngFor='let quote of quotes;let i = index'>
+            {{quote.name}} due on {{quote.completeDate|date}}
+            <!-- <button (click)='toggleDetails(i)'>Toggle Details</button> -->
+            <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+            <app-qoute-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)='completeQuote($event,i)'>
+            </app-qoute-details>
 
-<div>
-    <h1>My favorite quotes</h1>
-    <hr>
-    <ul>
-      <div *ngFor='let quote of quotes;let i = index'>
-         <li>{{quote.name}}</li>
-         <button (click)='toggleDetails(i)'>Toggle Details</button>
-         <!-- <app-goal-detail *ngIf='goal.showDescription' [quote]='quote' '></app-goal-detail> -->
-        <li *ngFor='let quote of quotes;let i = index'>
-           {{quote.name}} due on {{quote.completeDate|date}}
-           <button (click)='toggleDetails(i)'>Toggle Details</button>
-           <app-qoute-details *ngIf = 'quote.showDescription' [quote]='quote'(isComplete) = 'completeQuote($event,i)'></app-qoute-details>
-   
-         <app-forms></app-forms>
+            <app-forms></app-forms>
+        </div>
+        
+      
+  
+
