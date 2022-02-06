@@ -5,16 +5,15 @@
     <div class="col-md-6">
       <ul>
         <div *ngFor='let quote of quotes;let i = index'>
-          <li>{{quote.name}}</li>
-          <button (click)='toggleDetails(i)'>Toggle Details</button>
-          <li *ngFor='let quote of quotes;let i = index'>
-            {{quote.name}} due on {{quote.completeDate|date}}
-            <!-- <button (click)='toggleDetails(i)'>Toggle Details</button> -->
-            <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+         {{quote.name}} due on {{quote.completeDate|date}}
+        
+            
+         <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+         
             <app-qoute-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)='completeQuote($event,i)'>
-            </app-qoute-details>
-
-            <app-forms></app-forms>
+               <button (click)='toggleDetails(i)'>Toggle Details</button>
+            </app-qoute-details><app-forms></app-forms>
+           
         </div>
         
       
