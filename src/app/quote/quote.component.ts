@@ -22,6 +22,7 @@ quotes:Quote[] =[
 
 
 ];
+
 toggleDetails(index:number){
   this.quotes[index].showDescription = !this.quotes[index].showDescription;
 }
@@ -29,7 +30,16 @@ completeQuote(isComplete: any, index: any){
   if (isComplete) {
     this.quotes.splice(index,1);
   }
- 
+  addNewQuote(this.quotes);{
+    let goalLength = this.quotes.length;
+    // Quote.id = quoteLength+1;
+    Quote.completeDate = new Date(Quote.completeDate)
+    Quote.push(Quote)
+  }
+
+
+
+
   QuoteComponent.constructor(); { }
 
   this.ngOnInit(); void {
@@ -45,4 +55,8 @@ completeQuote(isComplete: any, index: any){
     throw new Error('Function not implemented.');
   }
 
+
+function addNewQuote(quote: any) {
+  throw new Error('Function not implemented.');
+}
 

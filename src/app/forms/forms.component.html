@@ -1,6 +1,8 @@
 <div class="container-fluid">
   <h2 class="text-center">Create a new Qoutes</h2>
   <hr>
+
+  <form (ngSubmit)='submitQuote()' #qouteForm='ngForm'>
   <form>
     <div class="form-group">
 
@@ -30,9 +32,12 @@
       <label for="details">Details</label>
       <textarea class="form-control" id="details"  rows="4" [(ngModel)]="newQuote.details" name="details" #details="ngModel" required></textarea>
       <div [hidden]="details.valid || details.pristine" class="alert alert-danger">
-    </div>
-   <p>Details is required</p>
+        <p>Details is required</p>
+      </div>
+ 
  <button type="submit" class="btn btn-success">Add Quotes</button>
 </div>
+
+
 <!-- </form> -->
 </div>
