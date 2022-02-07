@@ -1,7 +1,8 @@
 
 <div class="container">
-
-  <h1>My favorite quotes</h1>
+<div class="head">
+  <h1>Revolutionary-Quotes</h1>
+</div>
   <hr>
   <div class="row">
     <div class="col-md-6">
@@ -10,7 +11,7 @@
          {{quote.name}}
         
             
-         <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+         <button (click)='toggleDetails(i)' class="btn btn-primary">Show-Details</button>
           <app-qoute-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)='completeQuote($event,i)' ></app-qoute-details>
    
                <!-- <button (click)='toggleDetails(i)'>Toggle Details</button> -->
