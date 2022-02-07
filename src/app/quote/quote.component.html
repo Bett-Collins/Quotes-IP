@@ -1,9 +1,10 @@
+
 <div class="container">
 
   <h1>My favorite quotes</h1>
   <hr>
-    <div class="quote1">
-      <div class="quote">
+  <div class="row">
+    <div class="col-md-6">
       <ul>
         <li *ngFor='let quote of quotes;let i = index'>
          {{quote.name}}
@@ -17,9 +18,9 @@
             </ul>
              
             </div>
-        
+            <div class="col-md-6">
         <app-forms>(addQuote)="addNewQuote($event)"</app-forms>
-        
+        </div>
       
    </div>
    </div>

@@ -1,13 +1,18 @@
-<p>qoute-details works!</p>
- <p>{{quote?.id}}</p>
-<p>{{quote?.author}}</p> 
+ 
+<p>{{quote?.author}} </p> 
+<p>{{quote?.details}}</p>
 
-<div class="vote">
+<div class="vote1">
     <p>NumberOfLikes</p>
     <button (click)="likeButtonclick()">Like</button>
+</div>
     <span>{{numberOfLike}}</span>
+
+<div class="vote" style="color: blue;">
     <button (click)="dislikeButtonclick()">DisLike</button>
+</div>
     <span>{{numberOfDislike}}</span>
-    
-  </div>
-<button (click) = ' quoteComplete(true)'Delete the quote></button>
+
+  <div class="delete">
+<button (click) = ' quoteComplete(true)'>Delete</button>
+</div>

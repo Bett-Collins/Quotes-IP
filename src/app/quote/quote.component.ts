@@ -29,6 +29,7 @@ toggleDetails(index:number){
 completeQuote(isComplete: any, index: any){
   if (isComplete) {
     confirm("Are you sure you want to delet this quote")
+    
     this.quotes.splice(index,1);
   }
   addNewQuote(this.quotes);{
