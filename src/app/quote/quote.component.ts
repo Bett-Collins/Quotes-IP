@@ -60,3 +60,14 @@ function addNewQuote(quote: any) {
   throw new Error('Function not implemented.');
 }
 
+  
+    
+  
+// function likeButtonclick() {
+//   throw new Error('Function not implemented.');
+// }
+
+// function dislikeButtonclick() {
+//   throw new Error('Function not implemented.');
+// }
+

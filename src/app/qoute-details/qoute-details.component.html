@@ -1,4 +1,12 @@
 <p>qoute-details works!</p>
  <p>{{quote?.id}}</p>
 <p>{{quote?.author}}</p> 
-<button (click)= 'goalComplete(true)'>Complete</button>
+
+<div>
+    <p>NumberOfLikes</p>
+    <button (click)="likeButtonclick()">Like</button>
+    <span>{{numberOfLike}}</span>
+    <button (click)="dislikeButtonclick()">DisLike</button>
+    <span>{{numberOfDislike}}</span>
+    
+  </div>
