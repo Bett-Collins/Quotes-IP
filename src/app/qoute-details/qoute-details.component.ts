@@ -16,16 +16,16 @@ export class QouteDetailsComponent implements OnInit {
   @Input() quote:Quote | undefined;
   @Output() isComplete = new EventEmitter<boolean>();
 
-  goalComplete(complete:boolean){
+  quoteComplete(complete:boolean){
     this.isComplete.emit(complete);
   }
-  numberOfLikes:number = 0;
+  // numberOfLike:number = 0;
 likeButtonclick(){
-  this.numberOfLikes++;
+  this.numberOfLike++;
   }
   
   dislikeButtonclick(){
-    this.numberOfLikes--;
+    this.numberOfDislike--;
     }
   constructor() { }
 

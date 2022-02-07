@@ -12,7 +12,7 @@ ngOnInit(): void {
 }
 
 quotes:Quote[] =[
-  new Quote (1,'Collins','Martin-luther', 'life qoutes -life is hard',new Date(2016,3,16)),
+  new Quote (1,'Collins','Martin-luther', 'life quotes -life is hard',new Date(2016,3,16)),
   new Quote (1,'Collins','Martin-luther', 'life qoutes -life is hard',new Date(2017,10,4)),
   new Quote (1,'Collins','Martin-luther', 'life qoutes-life is hard',new Date(2018,6,12)),
   new Quote (1,'Collins','Martin-luther', 'life qoutes-life is hard',new Date(2019,11,2)),
@@ -28,6 +28,7 @@ toggleDetails(index:number){
 }
 completeQuote(isComplete: any, index: any){
   if (isComplete) {
+    confirm("Are you sure you want to delet this quote")
     this.quotes.splice(index,1);
   }
   addNewQuote(this.quotes);{
