@@ -5,3 +5,7 @@ form{
 .add{
     margin: 10px;
 }
+#date{
+    border-radius: 1px,2px 3px;
+    margin-left: 20px;
+}
