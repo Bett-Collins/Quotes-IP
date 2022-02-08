@@ -7,9 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-ngOnInit(): void {
-  throw new Error('Method not implemented.');
-}
+
 
 quotes:Quote[] =[
   new Quote (1,'Religious','― Craig D. Lounsbrough','I am thankful that there are those among us who have sacrificed dearly on behalf of us. And I ardently pray to God that I might be less like myself and more like them.'
@@ -34,44 +32,22 @@ completeQuote(isComplete: any, index: any){
     
     this.quotes.splice(index,1);
   }
-  addNewQuote(this.quotes);{
-    let goalLength = this.quotes.length;
-    // Quote.id = quoteLength+1;
-    Quote.completeDate = new Date(Quote.completeDate)
-    Quote.push(Quote)
+}
+  addNewQuote(quotes:any){
+    let quotesLength = this.quotes.length;
+    quotes.id= quotesLength+1;
+    quotes.completeDate = new Date(quotes.completeDate)
+    this.quotes.push(quotes)
   }
 
 
 
 
-  QuoteComponent.constructor(); { }
+  constructor() { }
 
-  this.ngOnInit(); void {
+  ngOnInit():void{
   }
 
 }
-}
-  function deleteQuote(isRead: any, any: any, index: any, number: any) {
-    throw new Error('Function not implemented.');
-  }
 
-  function isRead(isRead: any, any: any, index: any, number: any) {
-    throw new Error('Function not implemented.');
-  }
-
-
-function addNewQuote(quote: any) {
-  throw new Error('Function not implemented.');
-}
-
-  
-    
-  
-// function likeButtonclick() {
-//   throw new Error('Function not implemented.');
-// }
-
-// function dislikeButtonclick() {
-//   throw new Error('Function not implemented.');
-// }
 

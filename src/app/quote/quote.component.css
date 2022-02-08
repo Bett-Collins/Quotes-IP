@@ -4,8 +4,13 @@ background-color: gray;
 }
 .btn{
     margin-left: 100px;
-    margin: 15px;
+    margin: 50px;
+  
 }
 .head{
     text-align: center;
+    color: white;
+}
+.quote{
+    margin-top: -20px;
 }

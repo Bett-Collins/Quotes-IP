@@ -2,6 +2,7 @@
 <div class="container">
 <div class="head">
   <h1>Revolutionary-Quotes</h1>
+  The most important kind of freedom is to be what you really are. You trade in your reality for a role.
 </div>
   <hr>
   <div class="row">
@@ -14,13 +15,14 @@
          <button (click)='toggleDetails(i)' class="btn btn-primary">Show-Details</button>
           <app-qoute-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)='completeQuote($event,i)' ></app-qoute-details>
    
-               <!-- <button (click)='toggleDetails(i)'>Toggle Details</button> -->
           </li>
             </ul>
              
             </div>
             <div class="col-md-6">
-        <app-forms>(addQuote)="addNewQuote($event)"</app-forms>
+              <div class="quote">
+        <app-forms (addQuote)="addNewQuote($event)"></app-forms>
+      </div>
         </div>
       
    </div>
